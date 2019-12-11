@@ -15,6 +15,8 @@ public class HalamanUtama extends AppCompatActivity {
     }
 
     public void handlerClickLogin(View view) {
+        Intent intent = new Intent(this, MenuUtama.class);
+        startActivity(intent);
     }
 
     public void handlerClickRegistrasi(View view) {

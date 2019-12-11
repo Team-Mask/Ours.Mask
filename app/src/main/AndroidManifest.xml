@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HalamanRegister"></activity>
+        <activity android:name=".MenuUtama"></activity>
+        <activity
+            android:name=".JenisMuka"
+            android:label="@string/title_activity_jenis_muka" />
+        <activity android:name=".HalamanRegister" />
         <activity android:name=".HalamanUtama" />
         <activity android:name=".MainActivity">
             <intent-filter>

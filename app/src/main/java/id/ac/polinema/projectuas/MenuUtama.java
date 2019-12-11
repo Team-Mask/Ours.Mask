@@ -1,14 +1,60 @@
 package id.ac.polinema.projectuas;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
-public class MenuUtama extends AppCompatActivity {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import id.ac.polinema.projectuas.fragments.JenisMukaFragment;
+import id.ac.polinema.projectuas.fragments.MaskerFragment;
+import id.ac.polinema.projectuas.fragments.PemesananFragment;
+
+public class MenuUtama extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_utama);
+        setContentView(R.layout.activity_main);
+        loadFragment(new JenisMukaFragment());
+        BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
+        // beri listener pada saat item/menu bottomnavigation terpilih
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+    }
+
+    private boolean loadFragment(Fragment fragment) {
+        if (fragment != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
+                    .commit();
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        Fragment fragment = null;
+        switch (menuItem.getItemId()) {
+            case R.id.action_jenisMuka:
+                fragment = new JenisMukaFragment();
+                break;
+            case R.id.action_masker:
+                fragment = new MaskerFragment();
+                break;
+            case R.id.action_pemesanan:
+                fragment = new PemesananFragment();
+                break;
+        }
+        return loadFragment(fragment);
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }

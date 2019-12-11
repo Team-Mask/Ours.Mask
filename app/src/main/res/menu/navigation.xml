@@ -4,8 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="665dp" />
-
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_jenisMuka"
+        android:title="Jenis Muka"
+        android:icon="@drawable/face1" />
+    <item android:id="@+id/action_masker"
+        android:title="Masker"
+        android:icon="@drawable/face2" />
+    <item android:id="@+id/action_pemesanan"
+        android:title="Pemesanan"
+        android:icon="@drawable/pesan" />
+</menu>
 </FrameLayout>

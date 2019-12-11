@@ -1,12 +1,21 @@
 package id.ac.polinema.projectuas;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import id.ac.polinema.projectuas.fragments.JenisMukaFragment;
+import id.ac.polinema.projectuas.fragments.MaskerFragment;
+import id.ac.polinema.projectuas.fragments.PemesananFragment;
+
+public class MainActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
