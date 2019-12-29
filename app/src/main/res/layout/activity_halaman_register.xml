@@ -127,6 +127,7 @@
         android:background="@drawable/button_color"
         android:fontFamily="@font/montserrat"
         android:text="Register"
+        android:onClick="handlerRegister"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
