@@ -6,11 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".fragments.JenisMukaFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/hello_blank_fragment" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

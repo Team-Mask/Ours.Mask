@@ -1,19 +1,23 @@
-package id.ac.polinema.projectuas;
+package id.ac.polinema.projectuas.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import id.ac.polinema.projectuas.R;
 import id.ac.polinema.projectuas.fragments.JenisMukaFragment;
 import id.ac.polinema.projectuas.fragments.MaskerFragment;
 import id.ac.polinema.projectuas.fragments.PemesananFragment;
+import id.ac.polinema.projectuas.fragments.UserFragment;
 
-public class MenuUtama extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,9 @@ public class MenuUtama extends AppCompatActivity implements BottomNavigationView
                 break;
             case R.id.action_pemesanan:
                 fragment = new PemesananFragment();
+                break;
+            case R.id.action_user:
+                fragment = new UserFragment();
                 break;
         }
         return loadFragment(fragment);
