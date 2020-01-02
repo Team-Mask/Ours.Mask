@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.DetailActivity"></activity>
+        <activity android:name=".activities.WajahJerawatActivity"></activity>
+        <activity android:name=".activities.WajahKeringActivity" />
+        <activity android:name=".activities.WajahBerminyakActivity" />
+        <activity android:name=".activities.WajahNormalActivity" />
+        <activity android:name=".activities.DetailActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.SplashActivity">
