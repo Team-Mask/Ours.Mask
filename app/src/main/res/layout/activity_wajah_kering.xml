@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.WajahKeringActivity">
+    tools:context=".activities.WajahNormalActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="Wajah Normal?"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="Jenis kulit wajah kering kurang memiliki kelembapan di lapisan kulit terluar. Hal ini mengakibatkan retakan pada permukaan kulit, serta akan terasa kering ketika disentuh. Pemilik jenis kulit wajah kering biasanya memiliki pori-pori yang hampir tak terlihat, permukaan luar kulit terlihat kasar dan kusam, serta kulit kurang elastis. Kulit jenis ini juga lebih mudah memerah, gatal, bersisik, dan meradang. Kulit wajah kering bisa disebabkan atau diperburuk oleh faktor genetik, penuaan, perubahan hormon, cuaca dingin, sinar matahari, radiasi ultraviolet, mandi air panas terlalu lama, atau bahan yang terkandung dalam produk sabun, kosmetik, pembersih, hingga obat-obatan.Perawatan jenis kulit wajah kering dapat meliputi: Gunakan pembersih wajah yang lembut dan tidak mengandung alkohol atau wewangian.
+                Hindari mandi dan mencuci muka dengan air hangat terlalu lama. Gunakan pelembap setiap selesai mencuci muka. Bagi pemilik kulit kering, disarankan untuk menggunakan pelembab khusus untuk kulit kering. Pakailah sabun pembersih wajah dengan bahan yang melembapkan, seperti emolien atau colloidal oatmeal."
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
+

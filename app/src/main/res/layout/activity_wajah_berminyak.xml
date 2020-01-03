@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.WajahBerminyakActivity">
+    tools:context=".activities.WajahNormalActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="Wajah Normal?"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="Jenis kulit wajah berminyak biasanya karena produksi sebum dari kelenjar sebaceous (kelenjar minyak) yang berlebih. Sebum merupakan zat minyak yang berasal dari lemak. Sedangkan kelenjar sebaceous adalah kelenjar yang terdapat di bawah permukaan kulit. Kendati sebum berfungsi membantu melindungi dan melembapkan kulit, namun kelebihan sebum akan menyebabkan kulit wajah menjadi berminyak, pori-pori tersumbat dan menimbulkan jerawat. Adapun faktor yang memengaruhi tingginya produksi sebum pada kulit seseorang adalah faktor genetik, perubahan hormon, atau pun stres. Jenis kulit wajah berminyak cenderung memiliki pori-pori yang besar, terlihat berkilau namun kusam, dan biasanya disertai komedo, jerawat, serta noda hitam."
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
+

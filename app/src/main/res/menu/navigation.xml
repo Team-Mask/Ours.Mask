@@ -9,7 +9,7 @@
     <item android:id="@+id/action_pemesanan"
         android:title="Pemesanan"
         android:icon="@drawable/pesan" />
-    <item android:id="@+id/action_user"
-        android:title="User"
-        android:icon="@drawable/user1" />
+<!--    <item android:id="@+id/action_user"-->
+<!--        android:title="User"-->
+<!--        android:icon="@drawable/user1" />user1-->
 </menu>

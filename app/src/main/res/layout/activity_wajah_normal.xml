@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.WajahNormalActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
 
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="Wajah Normal?"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="Beruntung bagi Anda pemilik jenis kulit wajah normal, karena jenis kulit ini cenderung memiliki keseimbangan antara jumlah kandungan air dan kandungan minyak, sehingga tidak terlalu kering tapi juga tidak terlalu berminyak. Jenis kulit wajah seperti ini biasanya jarang memiliki masalah kulit, tidak terlalu sensitif, pori-pori pun hampir tak terlihat, serta terlihat bercahaya.
+                              Perawatan jenis kulit wajah normal cenderung lebih mudah, Anda cukup menggunakan perawatan kulit wajah khusus untuk kulit normal. Gunakan sabun pembersih wajah yang lembut dan jangan menggosok wajah terlalu kasar. Anda bisa membilas wajah dengan air hangat lalu dikeringkan. Jika Anda mendapati kulit jadi mengering atau menjadi berminyak, cobalah pembersih yang berbeda."
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
+
